@@ -1,0 +1,9 @@
+ULT 1.0.13 — Windows source build
+
+1. Extract the project folder to D:\ULT_1.0.13_SOURCE.
+2. Confirm D:\JUCE\CMakeLists.txt exists (or set JUCE_PATH to the JUCE checkout).
+3. Run build-windows.bat in the extracted folder.
+4. The script configures Visual Studio 18 2026 x64 and builds ult_VST3.
+5. Output: D:\ULT_1.0.13_SOURCE\build\ult_artefacts\Release\VST3\ult.vst3.
+
+Do not distribute the test build before compiling and testing it in FL Studio.

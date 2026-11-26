@@ -1,0 +1,15 @@
+ult v0.6.2 — development build
+
+This build adds the agreed DSP and UI changes:
+- Stereo field generation for mono Reverb, without a Width control.
+- Ping-Pong sequence L100/R100/L75/R75/L56/R56 at 75% Feedback.
+- Compressor Input +18 dB / Output +3 dB as the standard for defaults, factory presets, newly inserted Compressor and loaded user presets.
+- EQ Cut Q control retained for cutoff shape.
+- De-Esser Amount added and Airwindows DeBess intensity/depth recalibrated.
+- Doubler Original 0–100%, default 100%.
+- Gate closes to exact silence over its Release interval.
+- Spacebar is passed to the DAW transport.
+- Monochrome iOS Liquid Glass-inspired UI.
+- Inter Regular/SemiBold/Bold embedded in the VST3, including Cyrillic support.
+
+Do not distribute this as a final binary until the Windows build and FL Studio tests pass.

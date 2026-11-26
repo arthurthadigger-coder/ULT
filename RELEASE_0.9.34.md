@@ -1,0 +1,1 @@
+Gate detector state and envelope GR; De-Esser high-band RMS attenuation and GR meter; frequency axis and matching dB grid; toolbar accent drag exclusion. Source review, not full requirements certification.

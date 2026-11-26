@@ -1,0 +1,27 @@
+ult v0.6.3 — development source
+
+INTERFACE
+- Reworked the fixed editor composition to 1320 × 740; it remains non-resizable.
+- Reorganized the header, insert chain, selected-effect workspace, and always-visible parallel sends.
+- Applied the strict black/white iOS Control Center-inspired glass language with grayscale-only state colors.
+- Refined the rotary controls, effect cards, picker surfaces, power controls, and vector Biohazard mark.
+- Embedded Inter is applied to labels, combo boxes, popup menus, buttons, and slider value labels.
+- Preset loading now rebuilds the selected effect panel before forcing a fresh chain visual snapshot.
+
+REVERB
+- Replaced the previous reverb network with an original stereo algorithm: asymmetric left/right input diffusion, an 8-line orthogonal feedback-delay network, asymmetric early reflections, and independent stereo output diffusion.
+- Room emphasizes early reflections and compact space; Hall balances early and late energy; Space provides a longer, more modulated and diffuse tail.
+- No Width control was added. Mono input is decorrelated internally; stereo input remains stereo.
+- All delay and diffuser memory is allocated in prepare(); sample processing performs no allocation.
+
+PRESERVED DSP / WORKFLOW
+- Compressor standard remains Input +18 dB / Output +3 dB across factory presets, user preset loading, new Compressor insertion and parameter defaults.
+- EQ edge Cut modes retain Q/Slope control.
+- Ping-Pong delay keeps equal-level L/R pairs with feedback decay.
+- De-Esser Amount, Doubler Original, full-close Gate, and DAW Spacebar transport behavior remain in place.
+- Insert-chain reorder still commits to DSP only on mouse-up.
+- Factory and user presets remain in one selector; Delay and Reverb remain independent and always visible.
+
+VALIDATION
+- Standalone 48 kHz mono impulse tests passed for Room/Hall/Space: left/right wet energy present, side-energy ratio ~0.50, inter-channel correlation near zero, and no unstable peak growth.
+- Full Windows JUCE/Visual Studio build and FL Studio listening/state-recall tests have not yet been run.

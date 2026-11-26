@@ -1,0 +1,30 @@
+ult v0.7.0 — source validation status
+
+IMPLEMENTED IN SOURCE
+- User-supplied transparent Biohazard PNG is embedded through JUCE BinaryData.
+- User-supplied iMan.ultpreset is embedded and registered as the seventh factory preset.
+- PRESETS uses a dedicated popup menu; the trigger is disabled while the asynchronous menu is open, and the menu requests downward placement.
+- Effect picker uses a stronger visual distinction between already-added and available effects.
+- Slider value backgrounds/outlines are transparent; labels and values have increased typography and tighter spacing.
+- Header control bounds and meter label/value columns have been aligned.
+- EQ has a dedicated five-position rotary SLOPE knob (12/18/24/36/48 dB/oct) on outer-band CUT filters, with 24 dB/oct default.
+- DSP uses Butterworth biquad cascades plus first-order sections for the odd-order 18 dB/oct option.
+- Existing eqQ1/eqQ5 remain for non-CUT modes and old-state compatibility.
+- EQ frequency text is formatted to two decimal places.
+- APVTS state marker advanced to schema 8.
+
+STATIC CHECKS
+- A coefficient-model calculation at 48 kHz / 1 kHz cutoff returned -3.01 dB at cutoff for all five orders.
+- At one octave above a low-pass cutoff, the modeled attenuations were approximately -12.4, -18.2, -24.2, -36.3, and -48.5 dB for the five settings.
+- Source and asset references were inspected after edits.
+- iMan preset binary is retained as an embedded resource; no runtime path dependency is required for the factory entry.
+- CMake project version and Windows build output folder are set to 0.7.0.
+
+NOT VERIFIED HERE
+- Full CMake configure/build: JUCE 9.0.5 SDK is not installed in this environment.
+- MSVC compilation and VST3 packaging: Windows Visual Studio toolchain is not available here.
+- FL Studio scan/load, GUI rendering, popup placement, and mouse interaction.
+- Audio listening tests for all five cut slopes and regression tests for the full DSP chain.
+- Host state save/reopen and user preset round-trip.
+
+This is a development source archive, not a verified release binary. Run TEST_PLAN_V07.md on Windows before distributing it.

@@ -1,0 +1,61 @@
+ult by swagghazard v0.7.0 — Third-party notices
+
+This project is distributed under GNU AGPL version 3.0 (see LICENSE.txt).
+The following third-party code is included and modified/adapted as noted.
+
+1) SnapTune — GNU AGPLv3
+   Author/project: NicoFerni / SnapTune contributors.
+   Included DSP files: AutoTuneEngine.cpp/.h, PitchDetector.cpp/.h, Scales.h,
+   VibratoTracker.h. The EngineSettings structure and correction calculation
+   were extended by ult with a fixed transposeSemitones field to provide the
+   Octave Shifter's -12/+12 voices. See ThirdPartyLicenses/SNAPTUNE-AGPL-3.0.txt.
+   Repository: https://github.com/NicoFerni/snaptune
+
+2) TOUCHSTONE-LA-8 DSP core — GNU AGPLv3
+   Author: Paul Ulrix.
+   Included files: dsp/include/refcomp/*.h. ult uses the FET topology as its
+   1176-style compressor and maps Input/Output and 4:1, 8:1, 20:1 controls.
+   See ThirdPartyLicenses/TOUCHSTONE-AGPL-3.0.txt.
+   Repository: https://github.com/loganjamesbailey/TOUCHSTONE-LA-8
+
+3) Airwindows DSP — MIT
+   Author: Chris Johnson.
+   Included algorithms: DeBess, Density3, StereoDoubler, StereoChorus, Verbity.
+   These original processReplacing DSP implementations are compiled behind a
+   small compatibility shim; the legacy VST2 SDK itself is not included.
+   StereoDoubler was adapted by ult to expose a delay parameter and extend its
+   detune calibration to reach the requested +/-50 cents. See
+   ThirdPartyLicenses/AIRWINDOWS-MIT.txt.
+   Repository: https://github.com/airwindows/airwindows
+
+4) Faust xfer_ott — function-level MIT license
+   Author: David Braun.
+   The xfer_ott Faust function is included as source reference in
+   Sources/ThirdParty/Faust/xfer_ott.faust. Sources/DSP/FaustOtt.cpp is a C++
+   adaptation of its band curves, attack/release laws, threshold shifts and
+   depth/time controls. Its LR4 crossover filters are implemented using JUCE.
+   This is a source-level adaptation, not a bit-identical Faust-generated DSP.
+   See ThirdPartyLicenses/FAUST-XFER-OTT-MIT.txt.
+   Repository: https://github.com/grame-cncm/faustlibraries
+
+5) JUCE 9.0.5 — AGPLv3 or commercial JUCE license
+   JUCE is an external dependency and is not bundled in this archive. The user
+   supplies JUCE 9.0.5 from D:\JUCE. For a public binary release, also make
+   the exact JUCE 9.0.5 corresponding source available and preserve the licence
+   notices for JUCE and its bundled VST3 SDK components. The selected AGPLv3
+   route requires distribution of the corresponding project source under
+   compatible terms. See https://github.com/juce-framework/JUCE/releases/tag/9.0.5
+   and https://juce.com/legal/.
+
+Not included in this v0.7.0 source tree: Flayr Tune, fetcomp-dsp, and the full
+TOUCHSTONE plugin/UI. They were downloaded for evaluation but are not linked
+into this build. Only the listed source subsets are used.
+
+
+6) Inter typeface — SIL Open Font License 1.1 (OFL)
+   Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter).
+   Bundled font faces: Inter Regular, Inter SemiBold, and Inter Bold.
+   They are embedded into the VST3 binary so users do not need to install fonts.
+   The complete copyright and license notice is in
+   ThirdPartyLicenses/Inter/COPYRIGHT_AND_LICENSE.txt.
+   Upstream project: https://github.com/rsms/inter

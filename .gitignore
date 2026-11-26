@@ -1,0 +1,15 @@
+/build/
+.vs/
+CMakeFiles/
+CMakeCache.txt
+*.sln
+*.vcxproj*
+*.user
+*.suo
+*.pdb
+*.ilk
+*.obj
+*.lib
+*.exp
+*.vst3
+*.ultpreset

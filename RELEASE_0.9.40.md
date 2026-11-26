@@ -1,0 +1,1 @@
+Plus position +2 px; palette OK dismisses popup, retains live preview; compressor ratio curve excludes gains; threshold-driven high-band attenuation up to 48 dB with Amount scaling. Crash dump contains no exception stream; crash not resolved. Build not verified.

@@ -1,0 +1,1 @@
+Font sizes now follow label, button and combo bounds. Group scaling no longer forces every child to 28x22. Layout import accepts small positive bounds. Export includes accent; save includes accent button and excludes native resize corner. Windows build not tested. Independent numeric value positioning remains pending.

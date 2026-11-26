@@ -1,0 +1,1 @@
+Intermediate source: adds About and per-version welcome overlay. Social buttons use text placeholders. GUIDE and update check are disabled pending implementation. Existing native dialogs not converted. Not compiled.

@@ -1,0 +1,1 @@
+Graph scaling: logical canvas for Gate, Compressor, De-Esser and Pitch Display; inverse mouse coordinates for Gate and De-Esser; scaled EQ nodes, labels and strokes; skip graph updates when not showing. Windows build untested.

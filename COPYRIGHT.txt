@@ -1,0 +1,12 @@
+ult by swagghazard
+
+Copyright (C) 2026 swagghazard and contributors.
+
+The original ult project source is distributed under the GNU Affero General
+Public License version 3.0 (AGPLv3), subject to the third-party notices and
+separate licenses listed in THIRD_PARTY_LICENSES.txt.
+
+Third-party authors retain copyright in their respective contributions.
+See ThirdPartyLicenses/ and PATCHES.md for attribution and modification notes.
+
+Inter font copyright and license: see ThirdPartyLicenses/Inter/COPYRIGHT_AND_LICENSE.txt.

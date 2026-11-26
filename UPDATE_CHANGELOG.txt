@@ -1,0 +1,1 @@
+ULT 1.1.0: stronger dimming of bypassed effect panels; controls remain interactive.

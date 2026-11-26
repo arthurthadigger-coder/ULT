@@ -1,0 +1,1 @@
+Layout fixes: stable ID history across rebuilt controls, toolbar coordinate conversion, group self-snap exclusion, proportional group resizing and keyboard focus. Full requirements compliance not established.

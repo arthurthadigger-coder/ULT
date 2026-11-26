@@ -1,0 +1,5 @@
+# ULT 1.0.14 — UI test source release
+
+Based on 1.0.13. Both language flags use the existing Russian flag's 3:2 display area; the UK flag is compressed horizontally only. Bypassed insert-chain power icons now use the same muted colour as the BYPASS label (#B0B0B0). Enabled icons and card backgrounds/borders/text are unchanged. The selected bypassed insert effect's panel chrome, labels, knobs, values, choices and graphs are rendered at 65% opacity, with controls still interactive (including Gate and De-Esser graph adjustment). Switching to an active effect or turning the selected effect on restores full opacity. The parallel sends and global controls are unchanged. The current default layout and user custom layout are preserved; the layout revision marker remains 1.0.13. Updated version comparison, state metadata, factory preset metadata and install/welcome markers to 1.0.14. Factory preset parameter values are unchanged. Network protocol and DSP are unchanged.
+
+Windows JUCE compilation and FL Studio visual verification are not available in this environment.

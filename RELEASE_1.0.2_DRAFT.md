@@ -1,0 +1,3 @@
+# ULT 1.0.2 — incomplete development snapshot
+Implemented source changes: Gate naming, 1.5 s CLIP hold, flat insert cards, pitch display dropout grace and adaptive smoothing, preset key/scale preservation, ten supplied factory presets, CLEAR confirmation, state version metadata.
+Not implemented: artist-inspired presets, Bitcrush, Doubler DSP/layout fixes, toolbar snapping, info/welcome/guide/update dialogs and network checks, universal modal dimming, full compatibility warnings and factory preset management. Factory extraction currently happens on factory preset selection, not startup. No Windows build or audio testing performed. Do not publish.

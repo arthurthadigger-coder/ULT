@@ -1,0 +1,1 @@
+Исправлена сборка: ресурс переименован в Assets/power_off.png, чтобы JUCE BinaryData сгенерировал power_off_png и power_off_pngSize. Исправлен вызов Graphics::drawImage на доступную перегрузку. При пересборке удалите старую папку build, чтобы BinaryData сгенерировался заново. Компиляция на Windows не проверена.

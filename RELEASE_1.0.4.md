@@ -1,0 +1,1 @@
+Development revision: five artist-inspired starting-point presets (not audio matched); toolbar-only snapping; separate ARTIST INSPIRED menu. Windows build and listening tests pending. GUIDE, info/update dialogs and compatibility warnings pending.

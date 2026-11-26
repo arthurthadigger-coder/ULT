@@ -1,0 +1,1 @@
+Independent EQ band enable parameters appended to existing parameter layout. Right-click EQ nodes to toggle. Disabled bands skip DSP and response calculation, nodes remain dimmed. Legacy state migration enables all bands; factory preset reset enables all bands. Source inspection only.

@@ -1,0 +1,33 @@
+ult v0.6.1 — validation status
+
+SOURCE REVIEW COMPLETED
+- Explicit EffectId -> APVTS enable-parameter mapping removes the reserved Resonance slot from direct array indexing. Modulation now resolves to modOn safely.
+- The full source archive includes the `UltAudioProcessor::createEditor()` implementation.
+- State restore rejects null, empty, oversized, and wrong-root blobs before APVTS replaceState.
+- ULT_CHAIN parsing ignores malformed tokens and filters the reserved Resonance ID.
+- Third-party Airwindows handles are null-checked before use in DeBess, Density3, Doubler, Chorus, and Verbity processing paths.
+- Bundled Density3 source now defines `M_PI_2` for MSVC, avoiding the previously encountered compile error.
+- Delay/Reverb controls receive a layout pass after creation.
+- Factory presets are defined in one selector alongside user preset files.
+- Add Effect button removed; plus controls remain.
+- Empty-chain text/plus layout separated.
+- Brand and signature are clickable links to the requested Telegram URL.
+- Chain card positions interpolate visually; DSP chain order remains committed only on mouse-up.
+- Existing Cut-mode EQ Q/resonance control is retained and explicitly labelled.
+
+STANDALONE DSP TESTS PASSED
+- Airwindows smoke test: DeBess, Density3, StereoDoubler, StereoChorus, and Verbity produced finite output.
+- TOUCHSTONE FET smoke test compiled and ran.
+
+NOT VERIFIED IN THIS ENVIRONMENT
+- Full JUCE 9.0.5 / Visual Studio 2026 Windows build.
+- FL Studio plugin scan/load after replacing the prior binary.
+- State restore against the user's exact crash-producing FL Studio project.
+- Adding Modulation and using both Doubler/Chorus during playback.
+- EQ Cut slope/Q interaction in FL Studio.
+- Delay/Reverb controls, factory/user preset recall, and DAW save/reopen.
+- Audio audition of Ping-Pong and stereo Reverb.
+- Smooth drag behavior and high-DPI rendering.
+
+IMPORTANT
+The EffectId table defect is a concrete out-of-bounds bug consistent with the reported access violation, but the FL Studio crash log itself is still needed if a crash persists after this fix. This is a development source archive, not a release binary.

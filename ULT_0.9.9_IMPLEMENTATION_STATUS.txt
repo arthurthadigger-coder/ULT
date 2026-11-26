@@ -1,0 +1,14 @@
+ULT 0.9.9 — WORK IN PROGRESS, NOT A COMPLETE IMPLEMENTATION
+
+This source tree includes work on the existing Layout Editor:
+- rectangle selection with number 1 held down (fully enclosed components)
+- additive selection, grouped translation / scaling in the overlay
+- Ctrl+Z / Ctrl+Y geometry history within the overlay
+- deselection after Save Layout
+- measurements shown on resize only
+- UI timer raised from 30 to 60 Hz
+
+Not yet implemented or validated: complete real-time per-effect DSP visualizations
+(EQ, Gate, 1176 Compressor, Autotune, De-Esser), all cross-instance
+synchronization, complete 113-point specification, Windows compilation.
+Do not present this as the finished ULT 0.9.9.

@@ -1,0 +1,1 @@
+Stable parameter-based layout IDs; merge saved geometry across effect panels; shared validation for import and load; format 2 rejects ambiguous legacy positional IDs. Remote reset restores accent and geometry.

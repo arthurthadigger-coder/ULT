@@ -1,0 +1,3 @@
+- EQ response uses the same Biquad coefficient builders and filter orders as the DSP, evaluated on independent local filter objects (no audio-thread state access).
+- EQ wheel targets the hovered node; gain drag covers the full parameter range; bypass and selection dimming.
+- Remaining audit: layout edit persistence during resize/rebuild, independent band enable (not present in existing parameter schema), full graph and layout requirements.

@@ -1,0 +1,1 @@
+Source candidate: vector social symbols and language flags, styled layout and preset errors, manual update result ownership, version 1.0.10. Not compiled. Native file choosers and accent picker remain unchanged. Guide screenshots not included.
